@@ -46,6 +46,6 @@ for kt in lines:
     list.append(final)
     df = pd.DataFrame(list)
     df.to_csv('jnt.csv')
-    subprocess.Popen(["jnt.csv"],shell=True)
 else:
+    subprocess.Popen(["jnt.csv"],shell=True)
     print("Done")
