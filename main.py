@@ -45,7 +45,7 @@ for kt in lines:
     final = {'Kode Tugas' : kt,'Load' : valuelo,'Unload':un}
     list.append(final)
     df = pd.DataFrame(list)
-    df.to_csv('jnt.csv')
 else:
+    df.to_csv('jnt.csv')
     subprocess.Popen(["jnt.csv"],shell=True)
     print("Done")
