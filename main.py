@@ -2,6 +2,7 @@
 import pandas as pd
 import requests
 import os
+import subprocess
 
 clear = lambda: os.system('cls')
 clear()
@@ -45,5 +46,6 @@ for kt in lines:
     list.append(final)
     df = pd.DataFrame(list)
     df.to_csv('jnt.csv')
+    subprocess.Popen(["jnt.csv"],shell=True)
 else:
     print("Done")
